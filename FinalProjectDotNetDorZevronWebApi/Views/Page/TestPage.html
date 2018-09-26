@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+
+    <script src="../../Scripts/TestingJS/NodeJsWebApiTest.js"></script>
+    <script src="../../Scripts/TestingJS/PromiseTest.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+</head>
+<body>
+    <!-- NavBar-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="#">DorZevron WebApi</a>
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item ">
+                    <a class="nav-link" href="../Page/XmlPage">Xml Web Api Page </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="../Page/JqueryPage">Jquery Web Api Page</a>
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Page/TestPage">Testing Page</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Page/RxPage">Observable Page</a>
+                </li>
+               
+            </ul>
+           
+        </div>
+    </nav>
+    <!-- NavBar-->
+
+    <h1>Test Page Promise & NODE server WEB API </h1>
+    <div class="container" style="margin-top:5%">
+
+       
+            <div id="divButtons" class="row" style="margin-top:5%">
+                <div class="col-md-2">
+                    <button class="btn btn-secondary" type="button" onclick="winApi.getTodosJquery()" id="btnGet">Get Promise </button>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-secondary" type="button" onclick="winApi.printTodos()" id="btnGetById">Print Promise</button>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-secondary" type="button" onclick="TestingNode()" id="btnTestByChoose">Test By NodeJs</button>
+                </div>
+
+            </div>
+            <h4>Testing By NodeJs</h4>
+            <div class="row">
+                <div class="col-md-2">
+                    <input type="radio" id="inNodeJsEmpty" name="testNode"  value="empty" />
+                    <label for="empty">empty result</label>
+                </div>
+
+                <div class="col-md-3">
+                    <input type="radio" id="inNodeJslarge " name="testNode" value="large" />
+                    <label for="Large">Large Result Node.JS</label>
+                </div>
+                <div class="col-md-2">
+                    <input type="radio" id="inNodeJsError " name="testNode" value="error" />
+                    <label for="Error">Error Node.JS</label>
+                </div>
+            </div>
+            <div id="divResult">
+
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div id="divFuncPostPutDelete">
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
